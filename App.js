@@ -1,8 +1,8 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Text} from 'react-native';
 import ToDo from './containers/Todo';
 import { gStyles } from './gStyles';
 import * as Font from 'expo-font'
-import AppLoading from 'expo-app-loading'
+import { useState } from 'react';
 
 const fonts = () => Font.loadAsync({
   'mt=bold': require('./assets/fonts/Montserrat-Bold.ttf'),
@@ -11,13 +11,14 @@ const fonts = () => Font.loadAsync({
 })
 
 export default function App() {
-  const [font, setFont] = useState(false);
+  // const [font, setFont] = useState(false);
 
-  if (!font) return <AppLoading startAsync={fonts} onFinish={() => setFont(true)} />
+  // if (!font) return <AppLoading startAsync={fonts} onFinish={() => setFont(true)} />
 
   return (
     <View style={gStyles.main}>
-      <ToDo />
+      <Text style={gStyles.title}>AASDA SADK AS DKASJ </Text>
+      {/* <ToDo /> */}
     </View>
   );
 }
@@ -25,6 +26,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-
   }
 })

@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         width: '60%',
         marginLeft: '20%',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        fontFamily: 'mt=medium'
     }
 })

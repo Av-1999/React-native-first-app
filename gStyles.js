@@ -4,7 +4,6 @@ export const gStyles = StyleSheet.create({
     main: {
         flex: 1,
         padding: 20,
-        backgroundColor: 'red'
     },
     title: {
         fontSize: 20,
